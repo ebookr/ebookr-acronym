@@ -20,4 +20,22 @@ describe('When using acronyms', function () {
 <abbr title="Three Letter Acronym">TLA</abbr>');
 		});
 	});
+
+	describe('Using <acp>', function () {
+		beforeEach(function () {
+			ebookr = require('ebookr').new();
+			acronym = require('../index')(ebookr);
+			ebookr.parse('<acrodef acronym="TLA">Three Letter Acronym</acrodef>');
+		});
+
+		it('should render', function () {
+			expect(ebookr.parse('<acp>TLA</acp>').render()).to.equal('Three Letter Acronyms (TLAs)');
+		});
+
+		it('should render differently when already used', function () {
+			expect(ebookr.parse('<acp>TLA</acp>\
+<acp>TLA</acp>').render()).to.equal('Three Letter Acronyms (TLAs)\
+<abbr title="Three Letter Acronyms">TLAs</abbr>');
+		});
+	});
 });
