@@ -5,7 +5,7 @@ describe('When initiating', function () {
 
 	beforeEach(function () {
 		ebookr = require('ebookr').new();
-		require('../index')(ebookr);
+		require('../index')(ebookr).reset();
 	});
 
 	it('should add tokens', function () {

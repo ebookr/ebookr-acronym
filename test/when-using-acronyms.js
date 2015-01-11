@@ -6,7 +6,7 @@ describe('When using acronyms', function () {
 	describe('Using <ac>', function () {
 		beforeEach(function () {
 			ebookr = require('ebookr').new();
-			acronym = require('../index')(ebookr);
+			acronym = require('../index')(ebookr).reset();
 			ebookr.parse('<acrodef acronym="TLA">Three Letter Acronym</acrodef>');
 		});
 
@@ -24,7 +24,7 @@ describe('When using acronyms', function () {
 	describe('Using <acp>', function () {
 		beforeEach(function () {
 			ebookr = require('ebookr').new();
-			acronym = require('../index')(ebookr);
+			acronym = require('../index')(ebookr).reset();
 			ebookr.parse('<acrodef acronym="TLA">Three Letter Acronym</acrodef>');
 		});
 
