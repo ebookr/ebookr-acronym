@@ -1,0 +1,44 @@
+{
+  "name": "ebookr-acronym",
+  "version": "0.0.1",
+  "description": "An extension to ebookr based on the popular LaTeX-package acronym",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebookr/ebookr-acronym.git"
+  },
+  "keywords": [
+    "ebookr",
+    "acronym"
+  ],
+  "author": "Arne Hassel <arne.hassel@gmail.com> (http://icanhasweb.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebookr/ebookr-acronym/issues"
+  },
+  "homepage": "https://github.com/ebookr/ebookr-acronym",
+  "dependencies": {
+    "consoleplusplus": "^1.3.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "ebookr": "^0.5.1",
+    "growl": "^1.8.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.1",
+    "load-grunt-config": "^0.14.0",
+    "load-grunt-tasks": "^0.6.0",
+    "mocha": "^1.21.5",
+    "mockrequire": "0.0.3",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0"
+  }
+}
